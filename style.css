@@ -200,6 +200,13 @@ body{
     bottom: 6rem;
     left: 50%;
     transform: translateX(-50%);
+    border: 1px solid transparent;
+    transition: all .2s;
+}
+.btn__cta:hover{
+    background-color: #0c2034;
+    color: #f3f3f3;
+    border: 1px solid #f3f3f3;
 }
 .btn__cta:focus{
     outline:none;
@@ -556,6 +563,14 @@ styling for footer */
     border-radius: 2px;
     border: none;
     padding: 1rem 2rem;
+    border: 1px solid transparent;
+    transition: all .2s;
+}
+
+.footer__cta:hover{
+background-color: #0c2034;
+color: #f3f3f3;
+border: 1px solid #f3f3f3;
 }
 .mobile__holder{
     height: 15rem;
