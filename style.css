@@ -32,58 +32,16 @@ body{
 .navbar{
     background-color: #f3f3f3;
     width: 100%;
-    padding: 3rem 13rem 0;
-    display: flex;
-    align-items: flex-end;
+    padding: 1.5rem 5rem 0;
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 20%;
-    margin: 0 0 0 auto;
-}
-.nav > *{
-    display: block;
-}
-.nav__hamburger{
-    width: 7rem;
+.navbar__logo{
+    width: 6%;
     height: auto;
-    margin: 0 auto 0 0;
 }
-.hamburger{
+.logo{
     object-fit: cover;
     width: 100%;
-    height: auto;
-}
-.hamburger__icon{
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-}
-.search__icon{
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-.navbar__input{
-    width: 20%;
-    padding: .25rem 2rem;
-    background-color: #C5C8CD;
-    border: none;
-    border-radius: 10px;
-    margin: 0 -2rem 0 0;
-    transition: all .5s;
-}
-.navbar__input::after{
-    content: "llol";
-    display: inline-block;
-    color: #0c2034;
-    font-size: 2rem;
-}
-.navbar__input:focus{
-    outline: none;
-    width: 60%;
+    height: 100%;
 }
 
 .heading__box{
@@ -101,10 +59,10 @@ body{
     color: #0c2034;
 }
 .event__flyer{
-    width: 43rem;
-    height: 43rem;
+    width: 41rem;
+    height: 41rem;
     position: absolute;
-    top: 6rem;
+    top: 9rem;
     left: 18rem;
     background-image: url("./images/event.png");
     background-size: cover;
@@ -214,18 +172,11 @@ body{
 /* header media query */
 @media only screen and (max-width: 900px){
     .navbar{
-        padding: 0 6rem;
+        padding: 2rem 6rem 0;
     }
-    .nav{
-        width: 16%;
+    .navbar__logo{
+        width: 8%;
     }
-    .nav__hamburger{
-        width: 15rem;
-    }
-    .navbar__input:focus{
-        width: 100%;
-    }
-
     .heading__box{
         height: 40%;
         padding: 1.5rem 6rem 1.5rem 0;
@@ -239,7 +190,7 @@ body{
     .event__flyer{
         width: 35rem;
         height:35rem;
-        top: 5rem;
+        top: 10rem;
         left: 12rem;
     }
     
@@ -270,17 +221,14 @@ body{
     .navbar{
         padding: 0 2rem;
     }
-    .nav{
-        width: 40%;
+    .navbar{
+        padding: 1rem 2rem 0;
     }
-    .nav__hamburger{
-        width: 14rem;
-    }
-    .navbar__input:focus{
-        width: 100%;
+    .navbar__logo{
+        width: 10%;
     }
     .heading__box{
-        padding: 2rem 2.5rem 5rem;
+        padding: .2rem 2.5rem 5rem;
     }
     .header__heading{
         text-align: left;
@@ -380,6 +328,11 @@ body{
     padding: 2.5rem 0 0;
 }
 /* details section media query */
+@media only screen and (max-width: 1050px) {
+    .section__details{
+        padding: 3.5rem 10rem 6rem;
+    }
+}
 @media only screen and (max-width: 900px) {
     .section__details{
         padding: 3.5rem 6rem 5rem;
@@ -420,12 +373,12 @@ body{
     margin: 3.5rem 0 0;
 }
 .googlemap{
-    width: 50rem;
-    height: 30rem;
+    width: 60rem;
+    height: 40rem;
 }
 .section__location--location{
-    flex: 0 0 40%;
-    font-size: 3.5rem;
+    flex: 0 0 35%;
+    font-size: 3.4rem;
     font-weight: 900;
     text-transform: uppercase;
     text-align: right;
@@ -444,7 +397,11 @@ body{
 }
 
 /* media query for location */
-
+@media only screen and (max-width: 1050px) {
+    .section__location{
+        padding: 3.5rem 10rem 6.5rem;
+    }
+}
 @media only screen and (max-width: 900px) {
     .section__location{
         padding: 3.5rem 6rem 6.5rem;
@@ -480,7 +437,7 @@ body{
         margin: 3.5rem 0 0;
     }
     .googlemap{
-        width: 34rem;
+        width: 48rem;
         height: 34rem;
     }
     .section__location--location{
@@ -492,7 +449,7 @@ body{
 }
 @media only screen and (max-width: 380px) {
     .googlemap{
-        width: 28rem;
+        width: 36rem;
         height: 28rem;
     }
 }
